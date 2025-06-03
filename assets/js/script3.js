@@ -4,15 +4,15 @@
 personas = []
 
 nTelefono= document.getElementById("telefono")
-vTelefono= vTelefono.value
-eTelefono=
-
+vTelefono= nTelefono.value
+eTelefono= placeholder="Ingrese un telefono"
 
 nContraseña= document.getElementById("contraseña")
-vContraseña= vContraseña.value
+vContraseña= nContraseña.value
 eContraseña= ""
 
 valide= true
+
 
 
 if{
