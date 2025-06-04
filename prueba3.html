@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Validación</title>
-    
+    <script src="assets/js/script3.js"></script>
 </head>
 <body>
 
     <form id="miFormulario">
-         <label for="telefono">Teléfono:</label>
+        <label for="telefono">Teléfono:</label>
         <input type="text" id="telefono" name="telefono">
         <span class="error" id="errorTelefono"></span>
         <br>
@@ -22,19 +22,34 @@
         <button type="button" onclick="validar()" id="btn">Enviar</button>
     </form>
 
-    
+    <br>
+
     <table>
         <thead>
             <tr>
-                <th>telefono</th>
-                <th>contrasenia</th>
-                <th>accion</th>
+                <th>Teléfono</th>
+                <th>Contraseña</th>
+                <th>Acción</th>
             </tr>
         </thead>
         <tbody id="cuerpoTabla">
-
         </tbody>
     </table>
+
+
+    <form id="formActualizar">
+        <label>Teléfono:</label>
+        <input type="text" id="telefono1" name="telefono1">
+        <span class="error" id="errorTelefono1"></span>
+        <br>
+
+        <label>Contraseña:</label>
+        <input type="text" id="contraseña1" name="contraseña1">
+        <span class="error" id="errorContraseña1"></span>
+        <br>
+
+        <button type="button" onclick="ActualizarRegistro()" id="BotonActualizar">Actualizar</button>
+    </form>
 
 </body>
 </html>
